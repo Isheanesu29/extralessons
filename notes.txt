@@ -1,0 +1,6 @@
+shortcut for comment is ctrl k c
+shortcut for uncomment  is  ctrl k u
+shortcut for undo is ctrl z
+shortcut for save is ctrl s
+shortcut for copy is ctrl c
+shortcut for cut is ctrl x
