@@ -15,5 +15,9 @@ message2 ="Isheanesu's first python class"
 
 # print(message1.count('s'))
 
-print(message1.replace('firt','second'))
+# print(message1.replace('firt','second'))
+
+print(message1[0])
+
+
 

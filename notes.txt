@@ -4,3 +4,9 @@ shortcut for undo is ctrl z
 shortcut for save is ctrl s
 shortcut for copy is ctrl c
 shortcut for cut is ctrl x
+tab command to navigate through directories
+rm too delete an empty file
+rm -rf to delete a file with content
+cd to move into the next folder
+touch to create a new file
+mkdir to make a new folder
