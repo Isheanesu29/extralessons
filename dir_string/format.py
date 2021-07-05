@@ -3,6 +3,8 @@
 
 import datetime as date
 
+import pandas
+
 
 message1 ='Isheanesu second'
 message2 ="python class"
@@ -16,6 +18,6 @@ time = date.datetime.now()
 
 # print(dir(message1))
 
-print(help(str))
+print(help(pandas))
 
 
