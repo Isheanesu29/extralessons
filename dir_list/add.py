@@ -7,4 +7,4 @@ names = ['Isheanes', 'Jeff', 'Grace']
 # together = cars + names # that is how you add two lists
 # adding = names.insert(3,'Kudzi') # will take which ever position you put the variable
 
-print(names) 
+print(names[2]) 
