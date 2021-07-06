@@ -3,15 +3,32 @@
 import pandas as pd
 from tabulate import tabulate
 
-df = pd.read_csv('dir_readWriteFiles\Sample.csv')
-data = pd.DataFrame(df)
+df = pd.read_csv('dir_readWriteFiles/2019 - Copy.csv',na_values=False)
 
-filt_column1 = data['Consignee_Name']=='TO THE ORDER OF BANK OF CEYLON' # this function will give you access to the specified column
-filt_columns = data['Quantity'] < 50    # when you are trying to extract a data that contains a certain amount quantity use == or > or <
-count = data.loc[filt_columns,'Quantity']
-filt_row = data.loc[4]          # you use this code if you want to work with the row only 
-count2 = data['Consignee_Name'].isin(filt_column1)
-# comparison = data['Consignee_Name'].str().__contains__('BANK')
-number_of_columns = data.columns
-print(number_of_columns)
+hd = df.head(10)
+tl = df.tail(10)
+shape = df.shape
+locate = df.loc[10:50:2] # when you put a third number like on the example it will increase by that number in our case by 2
+get_column = df['Country or region']
+get_listOfColumns = df.columns # this will print just the column's names
+get_listOfColumnsWithData = df[['Overall rank', 'Country or region', 'Score']].head(15)
+get_rowsAndColumns = df.loc[15:30,['Overall rank', 'Country or region', 'Score']]
+filter_row = df.loc[df['Score'] > 7,'Score']
+gh = df.Score > 7
+filter_lamda = df.Score.loc[lambda x: x > 6]
+get_location = df.iloc[:,2]
+get_locationList = df.iloc[1:7,[2,3,5]]
+filter_byQuery = df.query('Score < 7').iloc[:,2]
+df = df.rename(columns= {'Country or region':'Country'})
+# filter_Country = df.query('Country == ["Finland","Austria","Denmark","Norway"] & Score > 7,5')
+countries = ["Finland","Austria","Denmark","Norway", "Gabon", "Switzerland","South Sudan"]
+compare_countries = df['Country'].isin(countries)
+get_countries = df.loc[compare_countries,'Country']
+# languages = df['Languages'].str.contains('English')
+languages = df['Languages'].str.upper()
+get_languages = df.loc[languages,'Languages']
+
+print()
+
+
 
