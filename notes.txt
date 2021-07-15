@@ -11,3 +11,5 @@ cd to move into the next folder
 touch to create a new file
 mkdir to make a new folder
 cd .. takes you one directory backtou
+rm will remove a folder
+rm -rf will remove a file with contains

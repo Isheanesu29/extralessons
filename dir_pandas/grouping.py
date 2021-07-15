@@ -2,7 +2,7 @@
 
 import pandas as pd
 
-df = pd.read_csv('dir_pandas/2019 - Copy.csv',na_values=False)
+df = pd.read_csv('C:\Users\user\Desktop\projects\extralessons\dir_pandas\2019 - Copy.csv',na_values=False)
 
 getGDP_median = df['GDP per capita'].median()
 getGDP_mean = df['GDP per capita'].mean()
@@ -22,3 +22,4 @@ num =  [2, 4, 6, 8, 10, 11.5, 12.7 ]
 dnum = pd.DataFrame(num)
 print(dnum.mean())
 print(dnum.median())
+
