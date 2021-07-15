@@ -16,24 +16,27 @@ skipN_rows = pd.read_csv('dir_pandas/2019 - Copy.csv',nrows=4)
 
 def updateCountryOrRegion(Country):
     return Country.upper()
+
 def updateCountry(Country):
     if Country == 'Denmark':
         return Country.replace('Denmark','Zimbabwe')
+
 def stripCountry(Country):
     if Country==('Finland has good weather'):
         return ' '
 
-def stripCountry2(Country):
-    for x in Country:
-        if x.contains('Finland'):
-            return ' '
+def stripCountry2(Country): # stripCountry2 is a function and it takes on a parameter or argument.
+    if '//' in Country:
+        return Country.replace('//','')
+    else:
+        return Country
 
+def convetListToString(list):
+    return ''.join(list)
 
-        
-
+  
 # df = df['Country or region'].apply(updateCountryOrRegion) # inorder to place it back to the same dataframe remember to equals it to
-df = df['Country or region'].apply(stripCountry2)
-
-print()
+df['country'] = df['Country or region'].apply(stripCountry2)
+df['newList'] = df['preprocessed_docs'].apply(convetListToString)
 
 print()

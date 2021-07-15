@@ -5,6 +5,9 @@ import numpy as np
 
 df = pd.read_csv('dir_pandas/2019 - Copy.csv',na_values=False)
 
+
+
+
 drop_rows = df.dropna()    # will drop rows with missing values
 drop_withArg = df.dropna(axis='columns',how= 'any') # will drop columns with any missing values
 df.fillna(0,inplace=True)
@@ -15,4 +18,4 @@ df.replace('Finland','Finnish',inplace=False)
 
 
 
-print(dataType)
+# print(dataType)
