@@ -1,12 +1,17 @@
 
 # a functions are instruction packed together to perform a specific task
 # we create a function by creating a def key word 
+employees = ['Whilmar','Sharon','John']
 
-def greetings(name):
+def greetingss(name):
     x = f'Accept greetings from {name}' 
     return x
 
-print(greetings('Ishe')) 
+def greetings():
+    x = 'Accept greetings from Elvis' 
+    return x
+
+print(greetingss('Whilmar')) 
 
 def addTwoNumbers(a,b): # that how you declare and return a function
     y = a + b

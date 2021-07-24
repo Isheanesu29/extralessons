@@ -3,7 +3,7 @@
 import pandas as pd
 from tabulate import tabulate
 
-df = pd.read_csv('dir_readWriteFiles/2019 - Copy.csv',na_values=False)
+df = pd.read_csv('dir_pandas/2019 - Copy.csv',na_values=False)
 
 hd = df.head(10)
 tl = df.tail(10)
