@@ -32,7 +32,7 @@ def stripCountry2(Country): # stripCountry2 is a function and it takes on a para
         return Country
 
 def convetListToString(list):
-    return ''.join(list)
+    return ''.join(map(str,list))
 
   
 # df = df['Country or region'].apply(updateCountryOrRegion) # inorder to place it back to the same dataframe remember to equals it to

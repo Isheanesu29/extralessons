@@ -5,6 +5,7 @@ class Employee:
 
     raise_amountGlobal = 15.003 # that is a global variable
     gmail = '@gmail.com'
+    num_of_Employee = 0
 
     def __init__(self,firstName,lastName,salary,gender=None): # None helps to declare a optional parameter, not mandatory 
         self.first = firstName  # self represents this class, the instance of this class
@@ -12,6 +13,7 @@ class Employee:
         self.pay = salary
         self.email = firstName + '.' + lastName + self.gmail # always use self to access the instances of that file
         self.gen = gender
+        Employee.num_of_Employee += 1 # this will help increment the number of employees.
     
     def apply_raiseLocal(self):
         raise_amountLocal = 10.002
@@ -22,10 +24,11 @@ class Employee:
         new_pay = int(self.pay + self.raise_amountGlobal)
         return new_pay
 
-
+print(f'Number of employees is: {Employee.num_of_Employee}')
 emp_1 = Employee('Ishe','Murwira',20000)
 emp_2 = Employee('John','Jamerson',25000,'Male')
 emp_3 = Employee ('Susan','Rusike',15000,'Female')
+print(f'Number of employees is: {Employee.num_of_Employee}')
 
 print(emp_1.apply_raiseGlobal())
 print(emp_1.apply_raiseLocal())
