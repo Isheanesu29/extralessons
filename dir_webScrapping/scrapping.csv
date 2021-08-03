@@ -1,1 +1,2 @@
-Title,Tag
+Period,Description,Temperature
+"['ThisAfternoon', 'Tonight', 'Friday', 'FridayNight', 'Saturday', 'SaturdayNight', 'Sunday', 'SundayNight', 'Monday']","['Mostly Sunny', 'IncreasingClouds', 'DecreasingClouds', 'IncreasingClouds', 'Partly Sunny', 'Mostly Cloudy', 'Mostly Sunny', 'Partly Cloudy', 'Mostly Sunny']","['High: 67 °F', 'Low: 56 °F', 'High: 69 °F', 'Low: 56 °F', 'High: 67 °F', 'Low: 56 °F', 'High: 69 °F', 'Low: 56 °F', 'High: 68 °F']"

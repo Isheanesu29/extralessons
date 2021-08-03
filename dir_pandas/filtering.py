@@ -28,7 +28,7 @@ get_countries = df.loc[compare_countries,'Country']
 languages = df['Languages'].str.upper()
 get_languages = df.loc[languages,'Languages']
 
-print()
+print(locate)
 
 
 
